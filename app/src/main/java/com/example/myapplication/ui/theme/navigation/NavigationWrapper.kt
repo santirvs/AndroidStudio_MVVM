@@ -5,6 +5,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import com.example.myapplication.ui.theme.screens.Screen_Exemple1
+import com.example.myapplication.ui.theme.screens.Screen_Students
+import com.example.myapplication.ui.theme.screens.Screen_Students_Param
 import com.example.navegacio.screens.Screen1
 import com.example.navegacio.screens.Screen2
 import com.example.navegacio.screens.Screen3
@@ -14,7 +17,30 @@ import com.example.navegacio.screens.Screen3
 fun NavigationWrapper_Exemple1(){
     val navController = rememberNavController()
     NavHost(navController, Pantalla_Exemple1) {
-        composable<Pantalla1> {  }
+        composable<Pantalla_Exemple1> {
+            Screen_Exemple1()
+        }
+    }
+}
+
+
+@Composable
+fun NavigationWrapper_Exemple2(){
+    val navController = rememberNavController()
+    NavHost(navController, Pantalla_Exemple2) {
+        composable<Pantalla_Exemple2> {
+            Screen_Students()
+        }
+    }
+}
+
+@Composable
+fun NavigationWrapper_Exemple2_Param(){
+    val navController = rememberNavController()
+    NavHost(navController, Pantalla_Exemple2_Param) {
+        composable<Pantalla_Exemple2_Param> {
+            Screen_Students_Param("DAM2")
+        }
     }
 }
 

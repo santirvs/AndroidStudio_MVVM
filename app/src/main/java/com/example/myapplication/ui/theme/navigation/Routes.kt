@@ -14,3 +14,8 @@ data class Pantalla3(val userName: String, val salutacio: String, val edat: Floa
 @Serializable
 object Pantalla_Exemple1
 
+@Serializable
+object Pantalla_Exemple2
+
+@Serializable
+object Pantalla_Exemple2_Param

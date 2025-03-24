@@ -15,10 +15,10 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.myapplication.ui.theme.models.CounterViewModel
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.remember
 
 @Composable
-fun Body() {
+fun Screen_Exemple1() {
     val counterViewModel = viewModel<CounterViewModel>()
     val clicksValue: Int by counterViewModel.clicksValue.observeAsState(0)
     Column(
@@ -33,3 +33,4 @@ fun Body() {
         }
     }
 }
+

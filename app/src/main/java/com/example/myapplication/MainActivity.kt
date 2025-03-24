@@ -8,8 +8,7 @@ import androidx.activity.enableEdgeToEdge
 
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.myapplication.ui.theme.MyApplicationTheme
-import com.example.myapplication.ui.theme.navigation.NavigationWrapper_3Screens
-import com.example.myapplication.ui.theme.navigation.NavigationWrapper_Exemple1
+import com.example.myapplication.ui.theme.navigation.*
 import kotlin.time.TimeSource.Monotonic.markNow
 
 
@@ -26,7 +25,7 @@ class MainActivity : ComponentActivity() {
         //Mostra el navigation
         setContent {
             MyApplicationTheme {
-                NavigationWrapper_Exemple1()
+                NavigationWrapper_Exemple2_Param()
             }
         }
     }
