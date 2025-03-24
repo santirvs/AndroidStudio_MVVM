@@ -9,8 +9,17 @@ import com.example.navegacio.screens.Screen1
 import com.example.navegacio.screens.Screen2
 import com.example.navegacio.screens.Screen3
 
+
 @Composable
-fun NavigationWrapper(){
+fun NavigationWrapper_Exemple1(){
+    val navController = rememberNavController()
+    NavHost(navController, Pantalla_Exemple1) {
+        composable<Pantalla1> {  }
+    }
+}
+
+@Composable
+fun NavigationWrapper_3Screens(){
     val navController = rememberNavController()
     NavHost(navController, Pantalla1) {
         composable<Pantalla1> {

@@ -10,3 +10,7 @@ data class Pantalla2(val userName: String)
 
 @Serializable
 data class Pantalla3(val userName: String, val salutacio: String, val edat: Float)
+
+@Serializable
+object Pantalla_Exemple1
+
